@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق FoxFX | استثمر بذكاء</title>
+    <style>
+        :root {
+            --accent: #f97316; /* لون الثعلب البرتقالي المميز */
+            --bg: #09090b;
+            --text-title: #ffffff;
+            --text-sub: #a1a1aa;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-title);
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .hero-card {
+            background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
+            padding: 3rem 2rem;
+            border-radius: 30px;
+            border: 1px solid #27272a;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: var(--accent);
+            border-radius: 20px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        p { color: var(--text-sub); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6; }
+
+        .btn-download {
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn-download:hover { opacity: 0.9; transform: scale(1.02); }
+        
+        .footer-note { margin-top: 2rem; font-size: 0.75rem; color: #52525b; }
+    </style>
+</head>
+<body>
+
+    <div class="hero-card">
+        <div class="logo-placeholder">FX</div>
+        <h1>FoxFX</h1>
+        <p>بوابتك الاستثمارية الذكية. حمل التطبيق الآن وتابع أرباحك وعقودك الاستثمارية من أي مكان بكل سهولة.</p>
+        
+        <a href="app-release.apk" class="btn-download" download>تحميل التطبيق للـ Android</a>
+        
+        <div class="footer-note">نسخة تجريبية للمستثمرين - 2026</div>
+    </div>
+
+</body>
+</html>
