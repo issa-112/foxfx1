@@ -3,81 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق FoxFX | استثمر بذكاء</title>
+    <title>FoxFX | المنصة الاستثمارية العالمية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --accent: #f97316; /* لون الثعلب البرتقالي المميز */
-            --bg: #09090b;
-            --text-title: #ffffff;
-            --text-sub: #a1a1aa;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text-title);
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-
-        .hero-card {
-            background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
-            padding: 3rem 2rem;
-            border-radius: 30px;
-            border: 1px solid #27272a;
-            max-width: 400px;
-            width: 90%;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .logo-placeholder {
-            width: 80px;
-            height: 80px;
-            background: var(--accent);
-            border-radius: 20px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: white;
-            font-weight: bold;
-        }
-
-        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-        p { color: var(--text-sub); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6; }
-
-        .btn-download {
-            background: var(--accent);
-            color: white;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 15px;
-            font-weight: 600;
-            display: inline-block;
-            transition: transform 0.2s, opacity 0.2s;
-        }
-
-        .btn-download:hover { opacity: 0.9; transform: scale(1.02); }
-        
-        .footer-note { margin-top: 2rem; font-size: 0.75rem; color: #52525b; }
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap');
+        body { font-family: 'Cairo', sans-serif; background-color: #09090b; color: white; }
+        .gradient-text { background: linear-gradient(to right, #f97316, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body>
 
-    <div class="hero-card">
-        <div class="logo-placeholder">FX</div>
-        <h1>FoxFX</h1>
-        <p>بوابتك الاستثمارية الذكية. حمل التطبيق الآن وتابع أرباحك وعقودك الاستثمارية من أي مكان بكل سهولة.</p>
-        
-        <a href="app-release.apk" class="btn-download" download>تحميل التطبيق للـ Android</a>
-        
-        <div class="footer-note">نسخة تجريبية للمستثمرين - 2026</div>
-    </div>
+    <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <div class="text-2xl font-bold gradient-text">FoxFX</div>
+        <a href="#download" class="bg-orange-600 px-6 py-2 rounded-full font-bold hover:bg-orange-500 transition">تحميل التطبيق</a>
+    </nav>
+
+    <header class="text-center py-20 px-4">
+        <h1 class="text-5xl font-extrabold mb-6">مستقبلك المالي يبدأ <span class="gradient-text">مع FoxFX</span></h1>
+        <p class="text-zinc-400 max-w-2xl mx-auto text-lg mb-10">منصة استثمارية متكاملة تمنحك السيطرة الكاملة على محفظتك وعقودك الاستثمارية بتقنيات أمان عالية.</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-3xl font-bold mb-4">من نحن؟</h2>
+            <p class="text-zinc-400 leading-relaxed">FoxFX هي منصة استثمارية رقمية رائدة، نهدف لتمكين المستثمرين من إدارة عقودهم ومتابعة أرباحهم عبر واجهة سهلة وآمنة، مدعومة بخبرات مالية وتقنية متطورة لضمان أفضل عائد.</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+            <h3 class="font-bold mb-2">مميزاتنا:</h3>
+            <ul class="text-zinc-400 space-y-2">
+                <li>• عقود استثمارية مرنة</li>
+                <li>• حماية وتشفير متقدم</li>
+                <li>• دعم فني على مدار الساعة</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="download" class="py-20 text-center bg-zinc-900/50">
+        <h2 class="text-3xl font-bold mb-8">ابدأ رحلتك الآن</h2>
+        <a href="app-release.apk" class="inline-flex items-center gap-2 bg-white text-black px-10 py-4 rounded-2xl font-bold text-lg hover:bg-zinc-200 transition">
+            تحميل تطبيق FoxFX (Android)
+        </a>
+        <p class="mt-4 text-zinc-500 text-sm">الإصدار 1.0.0 | آمن وموثق</p>
+    </section>
+
+    <footer class="py-10 text-center text-zinc-600 text-sm">
+        جميع الحقوق محفوظة لشركة FoxFX &copy; 2026
+    </footer>
 
 </body>
 </html>
